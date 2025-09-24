@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  font-family: 'indie flower', cursive;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px 30px;
+}
+
+nav h1 {
+  font-size: 24px;
+  color: crimson;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: crimson;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url("images/banner.jpg") no-repeat center/cover;
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: crimson;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.btn {
+  position: relative;       /* Needed for underline placement */
+  display: inline-block;
+  background: crimson;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Big underline */
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -50px;   /* Distance below the button */
+  width: 100%;
+  height: 6px;     /* Thickness of underline */
+  background: crimson;
+  border-radius: 3px;
+}
+
+
+.btn:hover {
+  background: darkred;
+}
+
+.about-game {
+  padding: 50px 20px;
+  text-align: left;
+  font-weight: bold;
+  color: crimson;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.mlg {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    color: crimson;
+    text-decoration: underline;
+}
+
+.mlgp {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.social {
+  padding: 50px 20px;
+  text-align: left;
+  font-weight: bold;
+  color: crimson;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+/* ...existing code... */
+
+.dc-btn {
+/* ...existing code... */
+
+
+  display: inline-block;
+  padding: 12px 32px;
+  background: linear-gradient(90deg, crimson 60%, #ff5e62 100%);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 16px rgba(220,20,60,0.2);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-left: 25px; /* Added to move button 5px right */
+
+/* ...existing code... */
+}
+
+.dc-btn:hover, .dc-btn:focus {
+  background: linear-gradient(90deg, #ff5e62 0%, crimson 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(220,20,60,0.3);
+  outline: none;
+}
+
+/* ...existing code... */

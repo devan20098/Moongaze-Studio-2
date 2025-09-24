@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report-Bug</title>
+
+    <style>
+       /* Bug Report Section */
+
+body {
+    background-color: black;
+}
+.bug-report {
+  background-color: #111;       /* Same as home page */
+  color: white;                 /* Default text color */
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.bug-report h2 {
+  color: crimson;               /* Heading color */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bug-report label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.bug-report input,
+.bug-report textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid crimson;   /* Input border color */
+  border-radius: 5px;
+  background-color: #222;       /* Dark input background */
+  color: white;                 /* Text inside input */
+  font-size: 16px;
+}
+
+.bug-report input::placeholder,
+.bug-report textarea::placeholder {
+  color: #aaa;                  /* Placeholder color */
+}
+
+.bug-report button.btn {
+  display: block;
+  margin: 0 auto;
+  background: crimson;
+  padding: 12px 25px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <section class="bug-report">
+  <h2>Report a Bug</h2>
+  <form>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="bug">Bug Description:</label>
+    <textarea id="bug" name="bug" placeholder="Describe the bug..." rows="5" required></textarea>
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</section>
+
+</body>
+</html>
